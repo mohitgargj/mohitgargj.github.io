@@ -1,0 +1,99 @@
+@import "./animations.css";
+@import "./fonts.css";
+
+
+* {
+    z-index: 2;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #000;
+    color:#fff;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+a, a:hover, a:active, a:focus, a:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    
+}
+#nokey{
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.left-container,.right-container    {
+    
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+}
+.right-container{
+    float: left;
+}
+
+.college-logo{
+    width: 100%;
+    margin-bottom: 5%;
+  
+
+}
+
+.college-logo>img{
+    width:  36%;
+    margin: auto;
+    margin-left: 37%;
+    margin-top: 5%;
+
+    
+}
+
+.eventname { 
+    text-align: center;
+    margin: 5% auto;
+}
+
+
+.festname {
+    font-family: "Dolce Vita Heavy Bold";
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    color: #fff;
+    font-size: 80px;
+    margin:auto;
+    padding: 0%;
+    width:100%;
+    position: relative;
+    letter-spacing: 2px;
+    height: auto;
+    z-index: 2;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #3a9ac0, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    animation-name: fade2;
+    animation-duration: 2s;
+}
+
+.nav{
+    position: fixed;
+text-align: center;
+align-items: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+

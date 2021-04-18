@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./stylesheets/register.css">
+    <meta name="theme-color" content="#cc0000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REGISTER | TECHNICA</title>
+</head>
+<body>
+    <!--Body of thee page starts here-->
+    <div class="main-container">
+        <canvas id="nokey" >
+            Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+           </canvas>
+           <script type="text/Javascript" src="js/anime.js"> </script>
+           
+        <!--Left side container-->
+        <div class="left-container">
+            <div class="college-logo">
+                <img src="https://educ8.in/wp-content/uploads/2019/04/cmru_logo.png" alt="">
+              </div>
+            <div class="eventname">
+                <span class="festname fade2">TECHNICA <br> 2K21 </span>
+            </div>
+
+         
+        </div>
+        <!--Left side container ends-->
+
+        <!--rigth side container-->
+        <div class="right-container">
+            <!--form container-->
+            <div class="form-container">
+                <form action="#" >
+                    <input type="text" name="firstname" placeholder="Enter First Name" id="firstname" required>                  
+
+                    <input type="text" name="lastname" placeholder="Enter Last Name" id="lastname" required>        
+
+                    <input type="email" name="mail" placeholder="Enter Email" id="email" required>        
+                    
+                    <input type="tel" name="phone" placeholder="Enter Phone Number" id="phone" required>        
+                    
+                    <input type="text" name="university" placeholder="Enter College Name" id="university" required>        
+                    
+                    <select name="gender" id="gender" required>
+                        <option value="" selected disabled hidden>Choose Gender</option>
+                        <option value="Male">Male</option>        
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>    
+
+                    <label for="photo"> Your Photo</label>
+                    <input type='file' name="photo" onchange="readURL(this);" />
+                    <img id="blah" src="#" alt="your image" />
+                    
+                    <label for="College"> College ID</label>
+                    <input type='file' onchange="readIMG(this);" />
+                    <img id="blah1" src="#" alt="your image" />
+
+                    <input type="submit" value="submit">
+                    <input type="reset" value="Reset Form">
+                    
+
+                </form>
+                  
+            </div>
+            <!--form container ends-->
+            <!--ajax script for image-->
+            <script>
+                function readURL(input) {
+                  if (input.files && input.files[0]) {
+                      var reader = new FileReader();
+
+                     reader.onload = function (e) {
+                       $('#blah')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(150);
+                     };
+                     reader.readAsDataURL(input.files[0]);
+                    }
+                }
+                function readIMG(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('#blah1')
+                                .attr('src', e.target.result)
+                                .width(150)
+                                .height(150);
+                        };
+
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+            </script>
+            
+        </div>
+        <!--right side container ends-->
+
+        <div class="nav">
+            <nav>
+                <a href="http://">home</a> &nbsp; | &nbsp;
+                <a href="http://">Team</a>&nbsp; |&nbsp;
+                <a href="http://">CMR University</a> &nbsp; |&nbsp;
+                <a href="http://">MAG & Co.</a> 
+
+
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

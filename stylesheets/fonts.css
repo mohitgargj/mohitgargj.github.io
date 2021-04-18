@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Cosmogen";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Cosmogen.otf");
+}
+@font-face {
+    font-family: "Dolce Vita";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Dolce\ Vita.ttf");
+}
+@font-face {
+    font-family: "Dolce Vita Heavy Bold";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Dolce\ Vita\ Heavy\ Bold.ttf");
+}
+@font-face {
+    font-family: "Dolce Vita";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Dolce\ Vita.ttf");
+}
+@font-face {
+    font-family: "digital 7 italic";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/digital_7_italic.ttf");
+}
+@font-face {
+    font-family: "digital 7 mono italic";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/digital_7_mono_italic.ttf");
+}
+@font-face {
+    font-family: "digital 7 mono";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/digital_7_mono.ttf");
+}
+@font-face {
+    font-family: "digital 7";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/digital_7.ttf");
+}
+@font-face {
+    font-family: "Square Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/square_sans_serif_7.ttf");
+}
